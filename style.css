@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f0ebf8;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 107px;
+    border-bottom: 1px solid transparent;
+    background-color: white;
+}
+.left{
+    display: flex;
+    background-color: white;
+    width: 666px;
+    height: 60px;
+}
+.left, img{
+    width: 48px;
+    height: 48px;
+}
