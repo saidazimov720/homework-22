@@ -35,5 +35,41 @@
         </div>
         <div class="form-container" id="form-container"></div>
     </main>
+    <script>
+        document.getElementById('add-form-btn').addEventListener('click', function() {
+            const formContainer = document.getElementById('form-container');
+
+            // Create a new form element container
+            const formElement = document.createElement('div');
+            formElement.className = 'form-element';
+
+            // Add a dropdown selection
+            const select = document.createElement('select');
+            const option1 = document.createElement('option');
+            option1.textContent = 'Option 1';
+            select.appendChild(option1);
+            const option2 = document.createElement('option');
+            option2.textContent = 'Option 2';
+            select.appendChild(option2);
+            formElement.appendChild(select);
+
+            // Add a text input field
+            const inputText = document.createElement('input');
+            inputText.type = 'text';
+            inputText.placeholder = 'Enter text...';
+            formElement.appendChild(inputText);
+
+            // Add a checkbox
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            formElement.appendChild(checkbox);
+            const label = document.createElement('label');
+            label.textContent = 'Checkbox';
+            formElement.appendChild(label);
+
+            // Append the new form element to the form container
+            formContainer.appendChild(formElement);
+        });
+    </script>
 </body>
 </html>
