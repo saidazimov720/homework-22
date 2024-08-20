@@ -18,7 +18,7 @@ header{
     height: 60px;
 }
 .left, img, h2, span{
-    width: 48px;
+    /* width: 48px; */
     height: 48px;
     background-color: white;
     padding: 5px;
@@ -29,4 +29,34 @@ header{
     background-color: white;
     width: 440px;
     float: right;
+}
+button{
+    height: 36px;
+    width: 122px;
+    margin-top: 20px;
+}
+
+.theme{
+    margin-top: 45px;
+    margin-left: 230px;
+    width: 768px;
+    height: 136px;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+.h1{
+    margin-top: 20px;
+    font-size: 45px;
+    width: 755px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.h1:active{
+    border: none;
+}
+.sub{
+    margin-top: 20px;
+    font-size: 25px;
+    width: 755px;
+    border: none;
 }
