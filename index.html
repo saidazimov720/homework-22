@@ -9,27 +9,31 @@
 <body>
     <header>
         <div class="left">
-            <img class="logo" src="./media/R.png" alt="">
+            <img class="logo" src="./media/R.png" alt="Logo">
             <h2>New form</h2>
-            <img src="./media/folder-closed-regular.svg" alt="">
-            <img src="./media/star-regular.svg" alt="">
+            <img src="./media/folder-closed-regular.svg" alt="Folder">
+            <img src="./media/star-regular.svg" alt="Star">
             <span>All changes saved in disk</span>
         </div>
         <div class="right">
-            <img src="./media/palette-solid.svg" alt="">
-            <img src="./media/eye-regular.svg" alt="">
-            <img src="./media/arrow-left-solid.svg" alt="">
-            <img src="./media/arrow-right-solid.svg" alt="">
+            <img src="./media/palette-solid.svg" alt="Palette">
+            <img src="./media/eye-regular.svg" alt="Preview">
+            <img src="./media/arrow-left-solid.svg" alt="Undo">
+            <img src="./media/arrow-right-solid.svg" alt="Redo">
             <button>Send</button>
-            <img src="./media/ellipsis-vertical-solid.svg" alt="">
+            <img src="./media/ellipsis-vertical-solid.svg" alt="More">
         </div>
     </header>
     <main>
         <div class="theme">
-            <p class="color"></p>
-            <p><input class="h1" type="text" placeholder="New form.."></p>
-            <input class="sub" type="text" placeholder="subtitles">
+            <div class="color"></div>
+            <input class="h1" type="text" placeholder="New form..">
+            <input class="sub" type="text" placeholder="Subtitles">
         </div>
+        <div class="add-button">
+            <button id="add-form-btn">+</button>
+        </div>
+        <div class="form-container" id="form-container"></div>
     </main>
 </body>
 </html>
