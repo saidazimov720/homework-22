@@ -17,7 +17,16 @@ header{
     width: 666px;
     height: 60px;
 }
-.left, img{
+.left, img, h2, span{
     width: 48px;
     height: 48px;
+    background-color: white;
+    padding: 5px;
+    margin: 15px;
+}
+.right{
+    display: flex;
+    background-color: white;
+    width: 440px;
+    float: right;
 }
