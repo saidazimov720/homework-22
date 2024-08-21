@@ -1,24 +1,24 @@
-document.getElementById("add-form-btn").addEventListener('click', function() {
-   const formCon = document.getElementById("form-container");
-   const formElement = document.createComment('div');
+document.getElementById('add-form-btn').addEventListener('click', function() {
+   const formContainer = document.getElementById('form-container');
+   const formElement = document.createElement('div');
    formElement.className = 'form-element';
-   const select = document.createComment('select');
-   const option1 = document.createComment('option');
-   option1.textContent = 'option1';
+   const select = document.createElement('select');
+   const option1 = document.createElement('option');
+   option1.textContent = 'Option 1';
    select.appendChild(option1);
    const option2 = document.createElement('option');
-   option2.textContent = 'option2';
+   option2.textContent = 'Option 2';
    select.appendChild(option2);
    formElement.appendChild(select);
-   const inputext = document.createElement('input');
-   inputext.type = 'text';
-   inputext.placeholder = 'Enter text';
-   formElement.appendChild(inputext);
+   const inputText = document.createElement('input');
+   inputText.type = 'text';
+   inputText.placeholder = 'Enter text...';
+   formElement.appendChild(inputText);
    const checkbox = document.createElement('input');
    checkbox.type = 'checkbox';
    formElement.appendChild(checkbox);
    const label = document.createElement('label');
-   label.textContent = 'checkbox';
+   label.textContent = 'Checkbox';
    formElement.appendChild(label);
-   formCon.appendChild(formElement);
+   formContainer.appendChild(formElement);
 });
