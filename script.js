@@ -7,5 +7,11 @@ document.getElementById("add-form-btn").addEventListener('click', function() {
    option1.textContent = 'option1';
    select.appendChild(option1);
    const option2 = document.createElement('option');
-   option2.textContent = 'option2'
+   option2.textContent = 'option2';
+   select.appendChild(option2);
+   formElement.appendChild(select);
+   const inputext = document.createElement('input');
+   inputext.type = 'text';
+   inputext.placeholder = 'Enter text';
+   formElement.appendChild(inputext);
 });
