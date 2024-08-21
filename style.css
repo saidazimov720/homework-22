@@ -82,8 +82,8 @@ button:hover {
 }
 .add-button {
     display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    justify-content: right;
+    margin-right: 50px;
 }
 .add-button button {
     width: 50px;
