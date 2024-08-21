@@ -5,4 +5,7 @@ document.getElementById("add-form-btn").addEventListener('click', function() {
    const select = document.createComment('select');
    const option1 = document.createComment('option');
    option1.textContent = 'option1';
+   select.appendChild(option1);
+   const option2 = document.createElement('option');
+   option2.textContent = 'option2'
 });
