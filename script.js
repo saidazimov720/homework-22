@@ -14,4 +14,11 @@ document.getElementById("add-form-btn").addEventListener('click', function() {
    inputext.type = 'text';
    inputext.placeholder = 'Enter text';
    formElement.appendChild(inputext);
+   const checkbox = document.createElement('input');
+   checkbox.type = 'checkbox';
+   formElement.appendChild(checkbox);
+   const label = document.createElement('label');
+   label.textContent = 'checkbox';
+   formElement.appendChild(label);
+   formCon.appendChild(formElement);
 });
