@@ -295,4 +295,86 @@ body {
     transform: translateX(100%);
     border-color: rgba(255, 255, 255, 1);
   }
-  
+  form{
+    width: 770px;
+    height: 275px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin: 30px auto; 
+    border: 1px solid black;
+    border-left: 5px solid #4285f4;
+}
+.custom-select {
+position: relative;
+display: inline-block;
+width: 250px;
+background-color: white;
+}
+
+.select-selected {
+background-color: gray;
+padding: 10px;
+border-radius: 5px;
+cursor: pointer;
+background-color: white;
+}
+
+.select-selected:after {
+content: "\25BC";
+position: absolute;
+right: 10px;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.select-items {
+display: none;
+position: absolute;
+background-color: white;
+top: 100%;
+left: 0;
+right: 0;
+z-index: 99;
+border-radius: 5px;
+overflow: hidden;
+line-height: 10px;
+}
+
+.select-items div {
+padding: 10px;
+cursor: pointer;
+display: flex;
+align-items: center;
+}
+
+.select-items div:hover {
+background-color: #f1f1f1;
+}
+
+.select-items div i {
+margin-right: 10px;
+}
+.check{
+margin-top: 100px;
+margin-left: 10px;
+}
+.blue{
+color: #1f76e9;
+}
+.buttons{
+float: right;
+margin: 0 15px;
+}
+#copy{
+font-size: 30px;
+margin:0 10px;
+}
+.mandat{
+font:14px Arial, Helvetica, sans-serif;
+margin-bottom: 25px;
+margin-right: 25px;
+}
+#little_menu{
+margin: auto;
+font-size: 25px;
+}
