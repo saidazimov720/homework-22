@@ -46,3 +46,27 @@ document.getElementById('addOptionCheckbox').addEventListener('change', function
 
         this.checked = false;
     }});
+
+document.querySelectorAll('.main__box-ul li').forEach(function(li) {
+    li.addEventListener('click', function() {
+        const input = document.querySelector('.main__box-input');
+
+        if (this.querySelector('.fa-bold')) {
+            toggleTextStyle(input, 'fontWeight', 'bold', 'normal');
+        } else if (this.querySelector('.fa-italic')) {
+            toggleTextStyle(input, 'fontStyle', 'italic', 'normal');
+        } else if (this.querySelector('.fa-underline')) {
+            toggleTextStyle(input, 'textDecoration', 'underline', 'none');
+        } else if (this.querySelector('.fa-text-slash')) {
+            toggleTextStyle(input, 'textDecoration', 'line-through', 'none');
+        }
+    });
+});
+
+function toggleTextStyle(element, style, value1, value2) {
+    if (element.style[style] === value1) {
+        element.style[style] = value2;
+    } else {
+        element.style[style] = value1;
+    }
+}
