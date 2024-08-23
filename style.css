@@ -96,7 +96,7 @@ body {
   border-bottom: 4px solid black;
 }
 .main__box {
-  width: 700px;
+  width: 768px;
   min-height: 100px;
   border-radius: 10px;
   background-color: var(--white);
