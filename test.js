@@ -31,3 +31,18 @@ document.addEventListener('click', function(event) {
         dropdown.style.display = 'none';
     }
 });
+document.getElementById('addOptionCheckbox').addEventListener('change', function() {
+    if (this.checked) {
+        const newOption = document.createElement('div');
+        newOption.innerHTML = `
+            <input type="checkbox">
+            <input type="text" placeholder="variant"><br><br>
+        `;
+        document.querySelector('.res2').appendChild(newOption);
+
+        
+        const form = document.getElementById('dynamicForm');
+        form.style.height = `${form.scrollHeight + 30}px`;
+
+        this.checked = false;
+    }});
