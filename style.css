@@ -189,3 +189,110 @@ body {
     margin-top: 10px;
     font-size: 18px;
 }
+
+.main__box {
+    width: 700px;
+    min-height: 100px;
+    border-radius: 10px;
+    background-color: var(--white);
+    margin: 15px auto;
+    border-top: 10px solid #673ab7;
+    border-left: 5px solid lightskyblue;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 25%;
+  }
+  .main__box-input {
+    width: 446px;
+    height: 56px;
+    padding: 16px;
+    font: 16px "docs-roboto";
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.434);
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+    .main__box-ul {
+        list-style: none;
+        display: none; 
+        position: absolute; 
+        top: 110px; 
+        left: 320px;
+        width: 300px; 
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        display: flex; 
+        gap: 10px;
+    }
+
+  .main__box-ul-li {
+    margin: 5px 10px;
+    color: var(--grey);
+    cursor: pointer;
+  }
+  .main__box-input-p {
+    font-size: 11pt;
+    font-family: "docs-Roboto";
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0;
+    height: 20px;
+    margin-bottom: 10px;
+  }
+
+  #image{
+    margin: 10px;
+  }
+  .switch {
+    margin-left: 15px;
+    margin-top: 10px;
+    position: relative;
+    height: 1.5rem;
+    width: 3rem;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 9999px;
+    background-color: rgba(100, 116, 139, 0.377);
+    transition: all .3s ease;
+  }
+  
+  .switch:checked {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .switch::before {
+    position: absolute;
+    content: "";
+    left: calc(1.5rem - 1.6rem);
+    top: calc(1.5rem - 1.6rem);
+    display: block;
+    height: 1.6rem;
+    width: 1.6rem;
+    cursor: pointer;
+    border: 1px solid rgba(100, 116, 139, 0.527);
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 10px rgba(100, 116, 139, 0.327);
+    transition: all .3s ease;
+  }
+  
+  .switch:hover::before {
+    box-shadow: 0 0 0px 8px rgba(0, 0, 0, .15)
+  }
+  
+  .switch:checked:hover::before {
+    box-shadow: 0 0 0px 8px rgba(193, 190, 192, 0.785)
+  }
+  
+  .switch:checked:before {
+    transform: translateX(100%);
+    border-color: rgba(255, 255, 255, 1);
+  }
+  
