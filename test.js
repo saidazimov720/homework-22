@@ -69,4 +69,4 @@ function toggleTextStyle(element, style, value1, value2) {
     } else {
         element.style[style] = value1;
     }
-}
+};
