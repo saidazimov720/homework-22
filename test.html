@@ -80,6 +80,7 @@
         }
         .buttons{
             float: right;
+            margin: 0 15px;
         }
         #copy{
             font-size: 30px;
@@ -88,12 +89,17 @@
         .mandat{
             font:14px Arial, Helvetica, sans-serif;
             margin-bottom: 25px;
+            margin-right: 25px;
+        }
+        #little_menu{
+            margin: auto;
+            font-size: 25px;
         }
         </style>
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <form id="dynamicForm" action="">
         <input onclick="toggleDropdown('box-ul')" class="main__box-input" placeholder="Form title" value="Untitled form" type="text">
         <ul class="main__box-ul" id="box-ul">
             <li class="main__box-ul-li"><i class="fa-solid fa-bold"></i></li>
@@ -106,15 +112,22 @@
             <div class="custom-select">
                 <div class="select-selected">Select an option</div>
                 <div class="select-items">
+                    <div><i class="fa-solid fa-align-center"></i>Text(line)</div>
+                    <div><i class="fa-solid fa-align-justify"></i>text(full)</div>
+                    <hr>
                     <div><i class="fa-solid fa-circle-check"></i>One of the</div>
                     <div><i class="fa-regular fa-square-check"></i>A few from list</div>
+                    <hr>
                     <div><i class="fa-solid fa-cloud-arrow-up"></i>File Uploads</div>
+                    <hr>
+                    <div><i class="fa-solid fa-grip"></i> Grid</div>
                 </div>
             </div>
         <div class="check">
             <input type="checkbox">
-            <span>Variant 1</span><br><br>
-            <input type="checkbox">
+            <input type="text" placeholder="variant"><br><br>
+            <div class="res2"></div>
+            <input id="addOptionCheckbox" type="checkbox">
             <span>Add option or <span class="blue">add "Other" option</span></span><br>
         </div>
         <hr>
@@ -122,6 +135,7 @@
             <i id="copy" class="fa-regular fa-copy"></i>
             <i id="copy" class="fa-solid fa-bucket"></i>
             <span class="mandat">Mandatory Question <input class="switch" type="checkbox" checked="true"></span>
+            <i id="little_menu" class="fa-solid fa-ellipsis-vertical"></i>
         </div>
     </form>
     <script src="./test.js"></script>
