@@ -3,38 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <div class="left">
-            <img class="logo" src="./media/R.png" alt="Logo">
-            <h2>New form</h2>
-            <img src="./media/folder-closed-regular.svg" alt="Folder">
-            <img src="./media/star-regular.svg" alt="Star">
-            <span>All changes saved in disk</span>
-        </div>
-        <div class="right">
-            <img src="./media/palette-solid.svg" alt="Palette">
-            <img src="./media/eye-regular.svg" alt="Preview">
-            <img src="./media/arrow-left-solid.svg" alt="Undo">
-            <img src="./media/arrow-right-solid.svg" alt="Redo">
-            <button>Send</button>
-            <img src="./media/ellipsis-vertical-solid.svg" alt="More">
+    <header class="header">
+        <nav class="navbar d-flex">
+            <ul class="header-ul d-flex">
+                <li class="header-ul-li"><i class="fa-solid fa-rectangle-list"></i></li>
+                <li class="header-ul-li header-ul-p">Untitled form</li>
+                <li class="header-ul-li"><i class="fa-regular fa-folder"></i></li>
+                <li class="header-ul-li"><i class="fa-regular fa-star"></i></li>
+                <li class="header-ul-li header-ul-span"><span>All changes saved in Drive</span></li>
+            </ul>
+            <ul class="header-second-ul d-flex">
+                <ul class="header-second-ul-li"><i class="fa-solid fa-palette"></i></ul>
+                <ul class="header-second-ul-li"><i class="fa-regular fa-eye"></i></ul>
+                <ul class="header-second-ul-li"><i class="fa-solid fa-arrow-left"></i></ul>
+                <ul class="header-second-ul-li"><i class="fa-solid fa-arrow-right"></i></ul>
+                <ul class="header-second-ul-li">
+                    <button class="header-button">
+                        Send
+                    </button>
+                </ul>
+                <ul class="header-second-ul-li"><i class="fa-solid fa-ellipsis-vertical"></i></ul>
+                <ul class="header-second-ul-li header-profil-img">
+                    N
+                </ul>
+            </ul>
+        </nav>
+        <div class="header__tablist">
+            <ul class="header__tablist-ul">
+                <li class="header__tablist-ul-li header__tablist-ul-li-active"><a href="#">Questions</a></li>
+                <li class="header__tablist-ul-li"><a href="#">Responses</a></li>
+                <li class="header__tablist-ul-li"><a href="#">Settings</a></li>
+            </ul>
         </div>
     </header>
-    <main>
-        <div class="theme">
-            <div class="color"></div>
-            <input class="h1" type="text" placeholder="New form..">
-            <input class="sub" type="text" placeholder="Subtitles">
+    <main class="main" id="main">
+        <div class="main__box ">
+
+            <input onclick="ulDownOne()" class="main__box-input" placeholder="Form title" value="Untitled form" type="text">
+            <ul class="main__box-ul" id="box-ul">
+                <li class="main__box-ul-li"><i class="fa-solid fa-bold"></i></li>
+                <li class="main__box-ul-li"><i class="fa-solid fa-italic"></i></li>
+                <li class="main__box-ul-li"><i class="fa-solid fa-underline"></i></li>
+                <li class="main__box-ul-li"><i class="fa-solid fa-link"></i></li>
+                <li class="main__box-ul-li"><i class="fa-solid fa-text-slash"></i></li>
+            </ul>
+
+            <input onclick="ulDownTwo()" class="main__box-input main__box-input-p" placeholder="Form description" type="text">
+            <ul class="main__box-ul" id="box-ul-two">
+                <li class="main__box-ul-li"><i class="fa-solid fa-bold"></i></li>
+                <li class="main__box-ul-li"><i class="fa-solid fa-italic"></i></li>
+                <li class="main__box-ul-li"><i class="fa-solid fa-underline"></i></li>
+                <li class="main__box-ul-li"><i class="fa-solid fa-link"></i></li>
+                <li class="main__box-ul-li"><i class="fa-solid fa-list-ol"></i></li>
+                <li class="main__box-ul-li"><i class="fa-solid fa-list-ul"></i></li>
+                <li class="main__box-ul-li"><i class="fa-solid fa-text-slash"></i></li>
+            </ul>
+
         </div>
-        <div class="add-button">
-            <button id="add-form-btn">+</button>
+        <div class="controller__panel">
+            <ul class="controller__panel-ul">
+                <li id="add-form-btn" class="controller__panel-li"><i class="fa-solid fa-circle-plus"></i></li>
+                <li class="controller__panel-li"><i class="fa-solid fa-file-import"></i></li>
+                <li class="controller__panel-li"><i class="fa-solid fa-t"></i></li>
+                <li class="controller__panel-li"><i class="fa-regular fa-image"></i></li>
+                <li class="controller__panel-li"><i class="fa-solid fa-circle-play"></i></li>
+                <li class="controller__panel-li"><i class="fa-solid fa-cube"></i></li>
+            </ul>
         </div>
-        <div class="form-container" id="form-container"></div>
     </main>
+    <div id="form-container"></div>
     <script src="./script.js"></script>
 </body>
+
 </html>
